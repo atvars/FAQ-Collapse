@@ -72,3 +72,44 @@ h1 {
 .faq.active .faq-text {
   display: block;
 }
+
+/* toggle buttons */
+.faq-toggle {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+}
+.faq-toggle:focus {
+  outline: 0;
+}
+
+/* romoving 'x' closing button from inactive cards */
+.faq-toggle .fa-times {
+  display: none;
+}
+
+/* displaying 'x' closing button on active card */
+.faq.active .faq-toggle .fa-times {
+  display: block;
+  color: white;
+}
+
+/* romoving checron down icon from active card */
+.faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+
+.faq.active .faq-toggle {
+  background-color: #9fa4a8;
+}
